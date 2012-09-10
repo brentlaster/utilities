@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+case "$1" in
+
+*.docx | *.DOCX)
+docx2txt "$1" -
+;;
+esac
+exit 0
