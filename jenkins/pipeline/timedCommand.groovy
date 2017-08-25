@@ -3,6 +3,6 @@ public timedCommand(String cmd, String logFilePath) {
       cmdOutput = sh (script:"${cmd}", returnStdout:true).trim()
    }
    echo cmdOutput
-   writeFile file: "${logfilePath}", text: "${cmdOutput}"
+   writeFile file: "${logFilePath}", text: "${cmdOutput}"
 }
 return this;
